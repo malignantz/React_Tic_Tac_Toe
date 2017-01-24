@@ -1,0 +1,30 @@
+body {
+	margin:20px;
+}
+
+.cell {
+	padding:5px;
+	margin:10px;
+	font-size:2em;
+	border-radius:5px;
+	width:55px;
+	height:55px;
+	float:left;
+	border:1px solid;
+	text-align:center;
+}
+
+.cell:hover {
+	background-color:gray;
+}
+
+.row {
+	width:auto;
+	clear:both;
+	text-align:center;
+}
+
+.cellItem {
+	position: relative;
+	top:15%;
+}
