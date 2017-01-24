@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import BoardContainer from '../container/BoardContainer';
+import BoardContainer from '../componets/Board';
 export default class App extends Component {
 	render(){
 		return (
