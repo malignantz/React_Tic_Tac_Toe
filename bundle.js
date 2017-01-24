@@ -19779,9 +19779,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _BoardContainer = __webpack_require__(161);
+	var _Board = __webpack_require__(161);
 
-	var _BoardContainer2 = _interopRequireDefault(_BoardContainer);
+	var _Board2 = _interopRequireDefault(_Board);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19806,7 +19806,7 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_BoardContainer2.default, null)
+					_react2.default.createElement(_Board2.default, null)
 				);
 			}
 		}]);
@@ -20096,7 +20096,7 @@
 				var totalPoints = rowPoints + colPoints + diagPoints;
 				console.log('Diag Points:', diagPoints, 'rowPoints:', rowPoints, 'colPoints:', colPoints);
 				console.log('Coord: ', coord.row + " " + coord.col, 'Points:', totalPoints);
-				if (maxPoints < totalPoints && !((0, _utils.isOnDiagonal)(coord) && diagFull)) {
+				if (maxPoints < totalPoints) {
 					maxPoints = totalPoints;
 					maxCoord = coord;
 				}
@@ -20106,6 +20106,9 @@
 		console.log('D Coord: ', defenseCoord);
 		return defenseCoord || maxCoord;
 	}
+
+	// check if move results in a fork -- disqualify forks.
+	// boardCanBeForked(board) checks altered board produces a loss
 
 /***/ },
 /* 163 */

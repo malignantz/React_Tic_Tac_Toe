@@ -111,7 +111,7 @@ export function computerMove(board){
 			var totalPoints = rowPoints+colPoints+diagPoints;
 			console.log('Diag Points:',diagPoints, 'rowPoints:',rowPoints, 'colPoints:',colPoints);
 			console.log('Coord: ',coord.row +" "+ coord.col, 'Points:',totalPoints);
-			if(maxPoints < totalPoints && !((isOnDiagonal(coord) && diagFull)) {
+			if(maxPoints < totalPoints) {
 				maxPoints = totalPoints;
 				maxCoord = coord;
 			}
